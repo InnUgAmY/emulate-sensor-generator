@@ -22,7 +22,7 @@ def emulate_sensor(min_value, max_value, metric_name, unit, filename='sensor_dat
             values.append(value)
             time.sleep(1)
 
-            # Усредняем и сохраняем данные раз в минуту
+            # Усредняем и сохраняем данные раз в минуту 
             if current_time - start_time >= 60:
                 average_value = sum(values) / len(values)
                 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
